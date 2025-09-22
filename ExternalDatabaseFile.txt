@@ -1,0 +1,4 @@
+Brand A bulb: 10 W
+Brand A lock: 500 mAH
+Brand B bulb: 15 W
+Brand B lock: 1000 mAH
