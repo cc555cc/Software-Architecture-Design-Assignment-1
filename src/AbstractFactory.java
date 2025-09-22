@@ -20,8 +20,8 @@ public abstract class AbstractFactory {
 
     //the factory of each brand should be able to create their bulb and lock, then configure them//
     //creation methods//
-    public abstract SmartBulb getBlub();
-    public abstract SmartLock getLock();
+    public abstract SmartBulb createBlub();
+    public abstract SmartLock createLock();
 
     //configuration methods//
     public abstract void setPowerUsage(SmartBulb b);

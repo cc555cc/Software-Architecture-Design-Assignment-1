@@ -7,10 +7,10 @@ public class Tester {
         AbstractFactory af2 = new FactoryCreator().getFactory("B");
 
         //create products//
-        SmartBulb bulb1 = af.getBlub();
-        SmartLock lock1 = af.getLock();
-        SmartBulb bulb2 = af2.getBlub();
-        SmartLock lock2 = af2.getLock();
+        SmartBulb bulb1 = af.createBlub();
+        SmartLock lock1 = af.createLock();
+        SmartBulb bulb2 = af2.createBlub();
+        SmartLock lock2 = af2.createLock();
 
 
 

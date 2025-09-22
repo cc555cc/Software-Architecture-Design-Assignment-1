@@ -4,14 +4,14 @@ public class BrandAFactory extends AbstractFactory {
         brand = "Brand A";
     }
 
-    public SmartBulb getBlub(){
+    public SmartBulb createBlub(){
         SmartBulb bulb = new BrandABulb();
         setPowerUsage(bulb);
         System.out.println("Brand A bulb created and configured, the power usage is " + bulb.getPowerUsage() );
         return bulb;
     }
 
-    public SmartLock getLock() {
+    public SmartLock createLock() {
         SmartLock lock = new BrandALock();
         setBatteryConsumption(lock);
         System.out.println("Brand A light lock created and configured, the battery consumption is " + lock.getBatteryConsumption());

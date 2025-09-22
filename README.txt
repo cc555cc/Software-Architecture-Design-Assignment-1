@@ -1,0 +1,7 @@
+Introduction:
+This repository contains the UML class diagram of the program and source code folder (src/). The source code includes all the classes needed to implement the Abstract Factory Pattern: the Tester class to demonstrate the program, the FactoryProducer to select and create the requested brand factory to use, the abstract factory the has the essential methods of the factory classes, the concrete factories (BrandAFactory and BrandBFactory), the product interfaces (Bulb and Lock), and the concrete product classes (BrandABulb, BrandALock, BrandBBulb, and BrandBLock). The project was tested with 4 examples: using the BrandAFactory and randBFactory to create a bulb and lock and print a confirm message. The output of the test driver shows the correct usage values for each product, and a screenshot of this output is included.
+
+To simulate the external database in the scenario, we create a text file to play it's role, which contains line of text that specify the value of the corresponding product.
+
+Logic Design:
+To apply the abstract factory design pattern, the program first create a factory creator and create one of the brand factory class with the type: AbstractFactory through the method getFactory(String). The factory then create an instance of the requested concrete product class when the createProduct(String) is called. The factory then read each lines of the Array and look for the one with the matching brand name and product type, then pass the value to the product class's setter method, thus changing it's value. 
